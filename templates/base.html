@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}}
+    <title>First Sight</title>
+    {% endif %}
+</head>
+<body>
+    <h3><a href="/">Flask APP</a></h3>
+    <hr>
+    {% block content %}
+    <p>Parent sub template</p>
+    {% endblock %}
+</body>
+</html>
