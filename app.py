@@ -2,14 +2,14 @@
 # @Time : 2021/4/24 19:22 
 # @Author : Nola
 # @File : app
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return 'code change the world!'
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
