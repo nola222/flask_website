@@ -9,8 +9,7 @@
     {% endif %}
 </head>
 <body>
-    <h3><a href="/">Flask APP</a></h3>
-    <hr>
+    {% include 'navbar.html' %}
     {% block content %}
     <p>Parent sub template</p>
     {% endblock %}
